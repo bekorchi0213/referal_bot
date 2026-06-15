@@ -1,0 +1,6 @@
+aiogram==3.7.0
+SQLAlchemy==2.0.30
+aiomysql==0.2.0
+python-dotenv==1.0.1
+aiofiles==23.2.1
+cryptography==42.0.8

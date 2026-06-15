@@ -1,0 +1,27 @@
+services:
+  - type: worker
+    name: bonus-coin-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_ID
+        sync: false
+      - key: DB_HOST
+        sync: false
+      - key: DB_PORT
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_NAME
+        sync: false
+      - key: BOT_USERNAME
+        sync: false
+      - key: MIN_WITHDRAW
+        value: "10000"
+      - key: REFERRAL_BONUS
+        value: "100"
